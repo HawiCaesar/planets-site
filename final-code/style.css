@@ -1,0 +1,27 @@
+body {
+    color: white;
+    background-color: #070724;
+}
+
+li {
+    float: left;
+}
+
+.navbar {
+ display: flex;
+flex-flow: wrap;
+ 
+}
+.nav-bar-title, .nav-bar-links {
+    width: 100%;
+    
+}
+
+.navbar > div {
+    flex: 0 1 50%;
+}
+
+
+.main-content {
+    border: 1px solid green;
+}
