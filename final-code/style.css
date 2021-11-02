@@ -24,4 +24,59 @@ flex-flow: wrap;
 
 .main-content {
     border: 1px solid green;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "planet-image inner-detailed-content"
+    "planet-image inner-nav"
+    "more-info more-info";
+}
+
+.planet-image, .inner-detailed-content, .more-info, .inner-nav {
+    border: 1px solid red;
+}
+
+.planet-image {
+    grid-area: planet-image;
+}
+
+.inner-detailed-content {
+    grid-area: inner-detailed-content;
+}
+
+.inner-nav {
+    grid-area: inner-nav
+}
+
+.more-info {
+    grid-area: more-info
+}
+
+@media screen and (max-width: 768px) {
+  
+    .main-content {
+        grid-template-areas: 
+        "planet-image planet-image"
+        "inner-detailed-content inner-nav"
+        "more-info more-info";
+    }
+}
+
+@media screen and (max-width: 411px) {
+  
+    .main-content {
+
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "inner-nav"
+        "planet-image"
+        "inner-detailed-content"
+        "more-info";
+    }
 }
