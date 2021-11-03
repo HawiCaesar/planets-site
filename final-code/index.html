@@ -6,8 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Spartan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
   
@@ -33,25 +33,36 @@
     </nav>
     <div class="main-content" role="main">
         <div class="planet-image">
-            <img src="assets/planet-mercury.svg" alt="Mercury" id="svg-image" width="290" height="290"/>
+            <img src="assets/planet-mercury-internal.svg" alt="Mercury" id="svg-image" width="290" height="290"/>
         </div>
         <div class="inner-detailed-content">
             <!-- Overview Content Start -->
-            Mercury
+            <h1 class="planet-title">Mercury</h1>
             
-            Mercury is the smallest planet in the Solar System and the closest 
-            to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-            shortest of all the Sun's planets. Mercury is one of four terrestrial 
-            planets in the Solar System, and is a rocky body like Earth.
+            <p class="planet-content">
+                Mercury is the smallest planet in the Solar System and the closest 
+                to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+                shortest of all the Sun's planets. Mercury is one of four terrestrial 
+                planets in the Solar System, and is a rocky body like Earth.
+            </p>
+            <p class="source-text">
+                Source : <a class="resource-link" href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a><span class="icon-source"></span>
+            </p>
             
-            Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+            
             
             <!-- Overview Content End -->
         </div>
         <div class="inner-nav">
-            01 Overview
-            02 Internal Structure
-            03 Surface Geology
+            <div class="Overview">
+                <p><span class="inner-nav-number">01</span><span class="inner-nav-text">Overview</span></p>
+            </div>
+            <div class="Internal">
+                <p><span class="inner-nav-number">02</span><span class="inner-nav-text">Internal Structure</span></p>
+            </div>
+            <div class="Surface">
+                <p><span class="inner-nav-number">03</span><span class="inner-nav-text">Surface Geology</span></p>
+            </div>
         </div>
         <div class="more-info">
             Rotation Time

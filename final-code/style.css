@@ -19,6 +19,53 @@ li {
     opacity: 0.75;
 }
 
+.planet-title, .planet-content, .source-text {
+    margin-left: 200px;
+}
+
+.planet-title {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 104px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.planet-content {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    width: 350px;
+    height: 150px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.source-text, .resource-link {
+    font-family: 'Spartan', sans-serif;
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+.resource-link {
+    color: white;
+    opacity: 0.75;
+    padding-right: 8px;
+}
+
+.icon-source {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-image: url('./assets/icon-source.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
 .navbar {
  display: flex;
 flex-flow: wrap;
@@ -39,7 +86,7 @@ flex-flow: wrap;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -73,7 +120,53 @@ flex-flow: wrap;
 }
 
 .inner-nav {
-    grid-area: inner-nav
+    height: 250px;
+    grid-area: inner-nav;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 48px 48px 48px; 
+    gap: 16px 0px; 
+    grid-template-areas: 
+    "Overview"
+    "Internal"
+    "Surface"; 
+}
+
+.inner-nav > .Overview, .Internal, .Surface {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height, or 208% */
+
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+}
+
+.Overview, .Internal, .Surface {
+    border: 1px solid gray;
+    margin-left: 200px;
+    width:350px;
+    letter-spacing: 2.57143px;
+}
+
+.Overview {
+    grid-area: Overview;
+}
+
+.Internal {
+    grid-area: Internal;
+}
+
+.Surface {
+    grid-area: Surface;
+}
+
+.inner-nav-number, .inner-nav-text {
+    margin-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
 
 .more-info {
