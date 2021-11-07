@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Spartan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
   
@@ -12,7 +15,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-bar-title">
+        <div class="navbar-title">
             <h1>The Planets</h1>
         </div>
         <div class="navbar-links">
@@ -21,7 +24,7 @@
                 <li>Venus</li>
                 <li>Earth</li>
                 <li>Mars</li>
-                <li>Jupiter</li>
+                <li class="navbar-link-active">Jupiter</li>
                 <li>Saturn</li>
                 <li>Uranus</li>
                 <li>Neptune</li>
@@ -35,32 +38,49 @@
         <div class="inner-detailed-content">
              <!-- Overview Content Start -->
 
-            Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
-            It is a gas giant with a mass two and a half times that of all the other 
-            planets in the Solar System combined, but less than one-thousandth the mass 
-            of the Sun.
+             <h1 class="planet-title">Jupiter</h1>
 
-            Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
+             <p class="planet-content">
+                 Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
+                 It is a gas giant with a mass two and a half times that of all the other 
+                 planets in the Solar System combined, but less than one-thousandth the mass 
+                 of the Sun.
+             </p>
+             <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
+             <p class="source-text">
+                 Source : <a class="resource-link" href="https://en.wikipedia.org/wiki/Jupiter">Wikipedia</a><span class="icon-source"></span>
+            </p>
 
             <!-- Overview Content End -->
         </div>
         <div class="inner-nav">
-            01 Overview
-            02 Internal Structure
-            03 Surface Geology
+            <div class="Overview">
+                <p><span class="inner-nav-number">01</span><span class="inner-nav-text">Overview</span></p>
+            </div>
+            <div class="Internal">
+                <p><span class="inner-nav-number">02</span><span class="inner-nav-text">Internal Structure</span></p>
+            </div>
+            <div class="Surface">
+                <p><span class="inner-nav-number">03</span><span class="inner-nav-text">Surface Geology</span></p>
+            </div>
         </div>
         <div class="more-info">
-            Rotation Time
-            9.93 Hours
-
-            Revolution Time
-            11.86 Years
-
-            Radius
-            69,911 KM
-
-            Average Temp.
-            -108°c
+            <div class="rotation">
+                <p class="more-info-text">Rotation Time</p>
+                <p class="rotation-time">9.93 Hours</p>
+            </div>
+            <div class="revolution">
+                <p class="more-info-text">Revolution Time</p>
+                <p class="revolution-time">11.86 Years</p>
+            </div>
+            <div class="radius">
+                <p class="more-info-text">Radius</p>
+                <p class="radius-in-km">69,911 KM</p>
+            </div>
+            <div class="average-temperature">
+                <p class="more-info-text">Average Temp.</p>
+                <p class="temperature-in-degrees">-108°c</p>
+            </div>
         </div>
     </div>
 </body>
