@@ -2,9 +2,12 @@ body {
     color: white;
     background-color: #070724;
     background-image: url('./assets/background-stars.svg');
+      margin: 0;
+     
 }
 ul {
     padding-left: 0;
+    margin: auto;
 }
 li {
     float: left;    
@@ -74,6 +77,8 @@ li {
  flex-direction: row;
 flex-flow: wrap;
 border-bottom: 1px solid #717281;
+height: 85px;
+margin: 0 8px;
 }
 .navbar-title, .navbar-links {
     width: 100%;   
@@ -100,13 +105,14 @@ border-bottom: 1px solid #717281;
 }
 
 .navbar-link-active {
-    border-top: 2px solid white;
+    border-top: 4px solid rgba(65, 158, 187, 1);
+    padding-top: 29px;
 }
 
 
 .main-content {
-    border: 1px solid green;
-
+    /* border: 1px solid green; */
+    margin-top: 77px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.4fr 0.3fr;
@@ -120,7 +126,7 @@ border-bottom: 1px solid #717281;
 }
 
 .planet-image, .inner-detailed-content, .more-info, .inner-nav {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .planet-image {
@@ -252,13 +258,14 @@ border-bottom: 1px solid #717281;
 @media screen and (max-width: 768px) {
 
     li {
-        margin-left: 36px;
+        margin: 0 17px;
+        
     }
 
     .navbar {
         flex-flow: unset;
         flex-direction: column;
-        
+        height: unset;
        }
        .navbar-title, .navbar-links {
            width: 100%;
@@ -272,6 +279,12 @@ border-bottom: 1px solid #717281;
        .navbar-title > h1 {
            text-align: center;
        }
+
+
+    .navbar-link-active {
+        border-top: unset;
+        padding-top: 33px;
+    }
   
     .main-content {
         grid-template-rows: 1fr 0.5fr 0.5fr;
