@@ -5,6 +5,11 @@ body {
       margin: 0;
      
 }
+
+.hambuger-mobile {
+    visibility: hidden;
+}
+
 ul {
     padding-left: 0;
     margin: auto;
@@ -84,7 +89,7 @@ margin: 0 8px;
     width: 100%;   
 }
 
-.navbar-title > h1 {
+.navbar-title > .title {
     font-family: Antonio;
     font-style: normal;
     font-weight: normal;
@@ -280,7 +285,7 @@ margin: 0 8px;
            flex: unset;
        }
 
-       .navbar-title > h1 {
+       .navbar-title > .title {
            text-align: center;
        }
 
@@ -377,6 +382,7 @@ margin: 0 8px;
         "planet-image"
         "inner-detailed-content"
         "more-info";
+        max-width: 411px;
     }
 
     .planet-image {
@@ -386,4 +392,84 @@ margin: 0 8px;
     #svg-image {
         transform: scale(0.389);
     }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    li {
+        float: none;
+    }
+
+    .navbar-title {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 30px; 
+        grid-template-areas: 
+            "title hambuger-mobile"; 
+        height: 68px; 
+    }
+
+    .title { 
+        grid-area: title;
+    
+    }
+    .hambuger-mobile { grid-area: hambuger-mobile; }
+
+    .navbar-title > .title {
+        
+        text-align: left;
+    }
+
+    .hambuger-mobile {
+        visibility: visible;
+        margin: auto;
+    }
+
+   
+
+    li::before {
+        content: "•"; 
+        color: red;
+        display: inline-block; 
+        width: 1em;
+         margin-left: 0em;
+         margin-right: 0.5em;
+        
+         font-size:45px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .arrow-planet {
+        display: inline-block;
+        background-image: url("./assets/icon-chevron.svg");
+       
+    }
+
+    /* li, .navbar-link-active {
+        padding-top: 29px;
+    } */
+
+    .more-info {
+
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+       
+    grid-template-areas:
+      "rotation"
+      "revolution" 
+      "radius" 
+      "average-temperature";
+      margin: 0 24px;
+      gap: 0 8px;
+    }
+
+    
 }
