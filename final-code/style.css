@@ -130,6 +130,10 @@ margin: 0 8px;
 }
 
 .planet-image {
+    padding-left: 130px;
+}
+
+.planet-image {
     grid-area: planet-image;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +291,7 @@ margin: 0 8px;
     }
   
     .main-content {
-        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr 0.3fr;
         grid-template-areas: 
         "planet-image planet-image"
         "inner-detailed-content inner-nav"
@@ -296,6 +300,7 @@ margin: 0 8px;
 
     .planet-image {
         height: 400px;
+        padding-left: unset;
     }
 
     #svg-image {
@@ -303,7 +308,7 @@ margin: 0 8px;
     }
 
     .inner-detailed-content {
-        padding-left: 10px;
+        padding-left: 39px;
     }
 
     .planet-title {
@@ -323,11 +328,17 @@ margin: 0 8px;
 
     .inner-nav {
         height: unset;
-        margin:80px auto auto auto;
+        margin-top: 80px;
+        padding-left:56px;
     }
 
     .Overview, .Internal, .Surface {
         margin-left:unset;
+        width: 281px;
+    }
+
+    .inner-nav-number, .inner-nav-text {
+        margin-left: 14px;
     }
 
     .source-text, .resource-link  {
@@ -341,10 +352,16 @@ margin: 0 8px;
 
     .more-info-text {
         font-size: 8px;
+        margin: 4px 0;
+    }
+
+    .rotation, .revolution, .radius, .average-temperature {
+        height: 80px;
     }
 
     .rotation-time, .revolution-time, .radius-in-km, .temperature-in-degrees {
         font-size: 24px;
+        line-height: 31px;
     }
 
 }
