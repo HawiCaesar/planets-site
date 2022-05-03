@@ -1,475 +1,494 @@
 body {
-    color: white;
-    background-color: #070724;
-    background-image: url('./assets/background-stars.svg');
-      margin: 0;
-     
+  color: white;
+  background-color: #070724;
+  background-image: url('./assets/background-stars.svg');
+  margin: 0;
 }
 
 .hambuger-mobile {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-ul {
-    padding-left: 0;
-    margin: auto;
-}
-li {
-    float: left;    
-    margin-right: 28px;
-    list-style-type: none;
-    font-size: 11px;
-    line-height: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Spartan', sans-serif;
-    font-weight: bold;
-    opacity: 0.75;
-    
-    padding-top: 33px;
-    width: 60px;
-}
+/* ul {
+  padding-left: 0;
+  margin: auto;
+} */
+/* li {
+  float: left;
+  margin-right: 28px;
+  list-style-type: none;
+  font-size: 11px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+  opacity: 0.75;
 
-.planet-title, .planet-content, .source-text {
-    margin-left: 200px;
+  padding-top: 33px;
+  width: 60px;
+} */
+
+.planet-title,
+.planet-content,
+.source-text {
+  margin-left: 200px;
 }
 
 .planet-title {
-    font-family: 'Antonio', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 104px;
-    text-transform: uppercase;
-    margin-bottom: 23px;
+  font-family: 'Antonio', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 104px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
 }
 
 .planet-content {
-    font-family: 'Spartan', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 25px;
-    width: 350px;
-    height: 150px;
-    text-align: left;
-    margin-bottom: 24px;
+  font-family: 'Spartan', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  width: 350px;
+  height: 150px;
+  text-align: left;
+  margin-bottom: 24px;
 }
 
-.source-text, .resource-link {
-    font-family: 'Spartan', sans-serif;
-    opacity: 0.75;
-    font-size: 14px;
+.source-text,
+.resource-link {
+  font-family: 'Spartan', sans-serif;
+  opacity: 0.75;
+  font-size: 14px;
 }
 
 .resource-link {
-    color: white;
-    opacity: 0.75;
-    padding-right: 8px;
+  color: white;
+  opacity: 0.75;
+  padding-right: 8px;
 }
 
 .icon-source {
-    height: 12px;
-    width: 12px;
-    display: inline-block;
-    background-image: url('./assets/icon-source.svg');
-    background-repeat: no-repeat;
-    vertical-align: middle;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-image: url('./assets/icon-source.svg');
+  background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
-.navbar {
+/* .navbar {
  display: flex;
  flex-direction: row;
 flex-flow: wrap;
 border-bottom: 1px solid #717281;
 height: 85px;
 margin: 0 8px;
-}
-.navbar-title, .navbar-links {
-    width: 100%;   
-}
+} */
+.navbar-title,
+/* .navbar-links {
+  width: 100%;
+} */
 
 .navbar-title > .title {
-    font-family: Antonio;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -1.05px;
-    text-transform: uppercase;
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .navbar > div {
-    flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 
-.navbar-links {
-    padding-bottom: 27px;
-}
+/* .navbar-links {
+  padding-bottom: 27px;
+} */
 
 .navbar-link-active {
-    border-top: 4px solid rgba(65, 158, 187, 1);
-    padding-top: 29px;
+  border-top: 4px solid rgba(65, 158, 187, 1);
+  padding-top: 29px;
 }
-
 
 .main-content {
-    /* border: 1px solid green; */
-    margin-top: 77px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.4fr 0.3fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "planet-image inner-detailed-content"
-    "planet-image inner-nav"
-    "more-info more-info";
+  /* border: 1px solid green; */
+  margin-top: 77px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'planet-image inner-detailed-content'
+    'planet-image inner-nav'
+    'more-info more-info';
 }
 
-.planet-image, .inner-detailed-content, .more-info, .inner-nav {
-    /* border: 1px solid red; */
+.planet-image,
+.inner-detailed-content,
+.more-info,
+.inner-nav {
+  /* border: 1px solid red; */
 }
 
 .planet-image {
-    padding-left: 130px;
+  padding-left: 130px;
 }
 
 .planet-image {
-    grid-area: planet-image;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: planet-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #svg-image {
-    
-
 }
 
 .inner-detailed-content {
-    grid-area: inner-detailed-content;
+  grid-area: inner-detailed-content;
 }
 
 .inner-nav {
-    height: 250px;
-    grid-area: inner-nav;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 48px 48px 48px; 
-    gap: 16px 0px; 
-    grid-template-areas: 
-    "Overview"
-    "Internal"
-    "Surface"; 
+  height: 250px;
+  grid-area: inner-nav;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 48px 48px;
+  gap: 16px 0px;
+  grid-template-areas:
+    'Overview'
+    'Internal'
+    'Surface';
 }
 
-.inner-nav > .Overview, .Internal, .Surface {
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 25px;
-    /* identical to box height, or 208% */
+.inner-nav > .Overview,
+.Internal,
+.Surface {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  /* identical to box height, or 208% */
 
-    letter-spacing: 2.57143px;
-    text-transform: uppercase;
+  letter-spacing: 2.57143px;
+  text-transform: uppercase;
 }
 
-.Overview, .Internal, .Surface {
-    border: 1px solid gray;
-    margin-left: 200px;
-    width:350px;
-    letter-spacing: 2.57143px;
+.Overview,
+.Internal,
+.Surface {
+  border: 1px solid gray;
+  margin-left: 200px;
+  width: 350px;
+  letter-spacing: 2.57143px;
 }
 
 .Overview {
-    grid-area: Overview;
+  grid-area: Overview;
 }
 
 .Internal {
-    grid-area: Internal;
+  grid-area: Internal;
 }
 
 .Surface {
-    grid-area: Surface;
+  grid-area: Surface;
 }
 
-.inner-nav-number, .inner-nav-text {
-    margin-left: 28px;
-    padding-top: 12px;
-    padding-bottom: 11px;
+.inner-nav-number,
+.inner-nav-text {
+  margin-left: 28px;
+  padding-top: 12px;
+  padding-bottom: 11px;
 }
 
 .more-info {
-    grid-area: more-info;
-    display: grid;
-    grid-template-columns: 255px 255px 255px 255px;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 28px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "rotation revolution radius average-temperature";
-      margin:auto;
+  grid-area: more-info;
+  display: grid;
+  grid-template-columns: 255px 255px 255px 255px;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 28px;
+  grid-auto-flow: row;
+  grid-template-areas: 'rotation revolution radius average-temperature';
+  margin: auto;
 }
-  
-  .rotation { grid-area: rotation; }
-  
-  .revolution { grid-area: revolution; }
-  
-  .radius { grid-area: radius; }
-  
-  .average-temperature { grid-area: average-temperature; }
 
-  .rotation, .revolution, .radius, .average-temperature {
-      height: 120px;
-      padding-left: 23px;
-      padding-top:6px;
-      border: 1px solid #717281;
-  }
+.rotation {
+  grid-area: rotation;
+}
 
-  .rotation-time, .revolution-time, .radius-in-km, .temperature-in-degrees {
-    font-family: Antonio;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 52px;
-    /* identical to box height */
-    
-    letter-spacing: -1.5px;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-    margin: auto;
-  }
+.revolution {
+  grid-area: revolution;
+}
 
-  .more-info-text{
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 25px;
-    /* identical to box height, or 227% */
-    
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    opacity: 0.5;
-  }
-  
+.radius {
+  grid-area: radius;
+}
+
+.average-temperature {
+  grid-area: average-temperature;
+}
+
+.rotation,
+.revolution,
+.radius,
+.average-temperature {
+  height: 120px;
+  padding-left: 23px;
+  padding-top: 6px;
+  border: 1px solid #717281;
+}
+
+.rotation-time,
+.revolution-time,
+.radius-in-km,
+.temperature-in-degrees {
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin: auto;
+}
+
+.more-info-text {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 25px;
+  /* identical to box height, or 227% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
 
 @media screen and (max-width: 768px) {
+  li {
+    margin: 0 17px;
+  }
 
-    li {
-        margin: 0 17px;
-        
-    }
+  .navbar {
+    flex-flow: unset;
+    flex-direction: column;
+    height: unset;
+  }
+  .navbar-title,
+  .navbar-links {
+    width: 100%;
+  }
 
-    .navbar {
-        flex-flow: unset;
-        flex-direction: column;
-        height: unset;
-       }
-       .navbar-title, .navbar-links {
-           width: 100%;
-           
-       }
-       
-       .navbar > div {
-           flex: unset;
-       }
+  .navbar > div {
+    flex: unset;
+  }
 
-       .navbar-title > .title {
-           text-align: center;
-       }
+  .navbar-title > .title {
+    text-align: center;
+  }
 
+  .navbar-link-active {
+    border-top: unset;
+    padding-top: 33px;
+  }
 
-    .navbar-link-active {
-        border-top: unset;
-        padding-top: 33px;
-    }
-  
-    .main-content {
-        grid-template-rows: 1fr 0.5fr 0.3fr;
-        grid-template-areas: 
-        "planet-image planet-image"
-        "inner-detailed-content inner-nav"
-        "more-info more-info";
-    }
+  .main-content {
+    grid-template-rows: 1fr 0.5fr 0.3fr;
+    grid-template-areas:
+      'planet-image planet-image'
+      'inner-detailed-content inner-nav'
+      'more-info more-info';
+  }
 
-    .planet-image {
-        height: 400px;
-        padding-left: unset;
-    }
+  .planet-image {
+    height: 400px;
+    padding-left: unset;
+  }
 
-    #svg-image {
-        transform: scale(0.63);
-    }
+  #svg-image {
+    transform: scale(0.63);
+  }
 
-    .inner-detailed-content {
-        padding-left: 39px;
-    }
+  .inner-detailed-content {
+    padding-left: 39px;
+  }
 
-    .planet-title {
-        font-size: 48px;
-        line-height: 62.11px;
-    }
+  .planet-title {
+    font-size: 48px;
+    line-height: 62.11px;
+  }
 
-    .planet-title, .planet-content, .source-text {
-        margin-left: unset;
-    }
+  .planet-title,
+  .planet-content,
+  .source-text {
+    margin-left: unset;
+  }
 
-    .planet-content {
-        line-height: 22px;
-        font-size: 11px;
-        height: 110px;
-    }
+  .planet-content {
+    line-height: 22px;
+    font-size: 11px;
+    height: 110px;
+  }
 
-    .inner-nav {
-        height: unset;
-        margin-top: 80px;
-        padding-left:56px;
-    }
+  .inner-nav {
+    height: unset;
+    margin-top: 80px;
+    padding-left: 56px;
+  }
 
-    .Overview, .Internal, .Surface {
-        margin-left:unset;
-        width: 281px;
-    }
+  .Overview,
+  .Internal,
+  .Surface {
+    margin-left: unset;
+    width: 281px;
+  }
 
-    .inner-nav-number, .inner-nav-text {
-        margin-left: 14px;
-    }
+  .inner-nav-number,
+  .inner-nav-text {
+    margin-left: 14px;
+  }
 
-    .source-text, .resource-link  {
-        font-size: 12px;
-    }
+  .source-text,
+  .resource-link {
+    font-size: 12px;
+  }
 
-    .more-info {
-        grid-template-columns: 164px 164px 164px 164px;
-        gap: 0 11px;
-    }
+  .more-info {
+    grid-template-columns: 164px 164px 164px 164px;
+    gap: 0 11px;
+  }
 
-    .more-info-text {
-        font-size: 8px;
-        margin: 4px 0;
-    }
+  .more-info-text {
+    font-size: 8px;
+    margin: 4px 0;
+  }
 
-    .rotation, .revolution, .radius, .average-temperature {
-        height: 80px;
-    }
+  .rotation,
+  .revolution,
+  .radius,
+  .average-temperature {
+    height: 80px;
+  }
 
-    .rotation-time, .revolution-time, .radius-in-km, .temperature-in-degrees {
-        font-size: 24px;
-        line-height: 31px;
-    }
-
+  .rotation-time,
+  .revolution-time,
+  .radius-in-km,
+  .temperature-in-degrees {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 
 @media screen and (max-width: 411px) {
-  
-    .main-content {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'inner-nav'
+      'planet-image'
+      'inner-detailed-content'
+      'more-info';
+    max-width: 411px;
+  }
 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-        grid-template-areas: 
-        "inner-nav"
-        "planet-image"
-        "inner-detailed-content"
-        "more-info";
-        max-width: 411px;
-    }
+  .planet-image {
+    height: 300px;
+  }
 
-    .planet-image {
-        height: 300px;
-    }
+  #svg-image {
+    transform: scale(0.389);
+  }
 
-    #svg-image {
-        transform: scale(0.389);
-    }
+  .navbar {
+    flex-direction: column;
+  }
 
-    .navbar {
-        flex-direction: column;
-    }
+  li {
+    float: none;
+  }
 
-    li {
-        float: none;
-    }
+  .navbar-title {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-template-areas: 'title hambuger-mobile';
+    height: 68px;
+  }
 
-    .navbar-title {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 30px; 
-        grid-template-areas: 
-            "title hambuger-mobile"; 
-        height: 68px; 
-    }
+  .title {
+    grid-area: title;
+  }
+  .hambuger-mobile {
+    grid-area: hambuger-mobile;
+  }
 
-    .title { 
-        grid-area: title;
-    
-    }
-    .hambuger-mobile { grid-area: hambuger-mobile; }
+  .navbar-title > .title {
+    text-align: left;
+  }
 
-    .navbar-title > .title {
-        
-        text-align: left;
-    }
+  .hambuger-mobile {
+    visibility: visible;
+    margin: auto;
+  }
 
-    .hambuger-mobile {
-        visibility: visible;
-        margin: auto;
-    }
+  li::before {
+    content: '•';
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: 0em;
+    margin-right: 0.5em;
 
-   
+    font-size: 45px;
+  }
 
-    li::before {
-        content: "•"; 
-        color: red;
-        display: inline-block; 
-        width: 1em;
-         margin-left: 0em;
-         margin-right: 0.5em;
-        
-         font-size:45px;
-    }
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  .arrow-planet {
+    display: inline-block;
+    background-image: url('./assets/icon-chevron.svg');
+  }
 
-    .arrow-planet {
-        display: inline-block;
-        background-image: url("./assets/icon-chevron.svg");
-       
-    }
-
-    /* li, .navbar-link-active {
+  /* li, .navbar-link-active {
         padding-top: 29px;
     } */
 
-    .more-info {
+  .more-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-       
     grid-template-areas:
-      "rotation"
-      "revolution" 
-      "radius" 
-      "average-temperature";
-      margin: 0 24px;
-      gap: 0 8px;
-    }
-
-    
+      'rotation'
+      'revolution'
+      'radius'
+      'average-temperature';
+    margin: 0 24px;
+    gap: 0 8px;
+  }
 }

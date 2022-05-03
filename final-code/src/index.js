@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Global, css } from '@emotion/react';
+
+const GlobalStyles = css`
+  body {
+    color: white;
+    background-color: #070724;
+    background-image: url('./assets/background-stars.svg');
+    margin: 0;
+  }
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Global styles={GlobalStyles} />
     <App />
   </React.StrictMode>
 );
