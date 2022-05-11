@@ -11,6 +11,7 @@ const GlobalStyles = css`
     background-color: #070724;
     background-image: url('./assets/background-stars.svg');
     margin: 0;
+    object-fit: cover;
   }
 `;
 
