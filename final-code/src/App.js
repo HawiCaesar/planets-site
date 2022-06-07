@@ -19,7 +19,7 @@ function App() {
             <img src='../assets/icon-hamburger.svg' />
           </div>
         </div>
-        {/* inner div show, probably should show or disapper on click */}
+        {/* inner div show, probably should show or disapper on click   */}
         <div className='planet-list'>
           <div>Mercury</div>
           <div>Venus</div>
