@@ -9,7 +9,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [show, setShow] = useState()
+  const [show, setShow] = useState();
   return (
     <div className='container'>
       <nav className='main-navigation'>
@@ -19,16 +19,20 @@ function App() {
             <img src='../assets/icon-hamburger.svg' />
           </div>
         </div>
-        {/* inner div show, probably should show or disapper on click   */}
+        {/* inner div show, probably should show or disapper on click */}
         <div className='planet-list'>
-          <div>Mercury</div>
-          <div>Venus</div>
-          <div>Earth</div>
-          <div>Mars</div>
-          <div>Mercury</div>
-          <div>Venus</div>
-          <div>Earth</div>
-          <div>Mars</div>
+          <div className='planet-list-item'>
+            {/* <span className='planet-menu-title'>Mercury</span> */}
+            Mercury
+            {/* <p className='planet-menu-title'></p> */}
+          </div>
+          <div className='planet-list-item'>Venus</div>
+          <div className='planet-list-item'>Earth</div>
+          <div className='planet-list-item'>Mars</div>
+          <div className='planet-list-item'>Mercury</div>
+          <div className='planet-list-item'>Venus</div>
+          <div className='planet-list-item'>Earth</div>
+          <div className='planet-list-item'>Mars</div>
         </div>
       </nav>
       <div className='planet-sub-menu'>
