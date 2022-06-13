@@ -22,8 +22,9 @@ function App() {
         {/* inner div show, probably should show or disapper on click */}
         <div className='planet-list'>
           <div className='planet-list-item'>
-            {/* <span className='planet-menu-title'>Mercury</span> */}
-            Mercury
+            <span className='planet-menu-dot'>
+              <span className='planet-menu-title'>Mercury</span>
+            </span>
             {/* <p className='planet-menu-title'></p> */}
           </div>
           <div className='planet-list-item'>Venus</div>
